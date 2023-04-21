@@ -1,22 +1,30 @@
 <template>
-    <div>
-        <Layout>
-            <template #header>
-                <Header></Header>
-            </template>
-        </Layout>
-    </div>
+    <Layout>
+        <template #header>
+            <Header></Header>
+        </template>
+        <template #resume>
+            <Resume/>
+        </template>
+        <template #movements>
+            <Movements/>
+        </template>
+
+    </Layout>
 </template>
 
 <script>
-import Layout  from './Header.vue'
-import Header from './Layout.vue'
+import Layout from "./Layout.vue";
+import Header from "./Header.vue";
+import Resume from "./Resume/Index.vue";
+import Movements from "./Movements.vue";
 
 export default {
     components: {
-        Layout,
-        Header,
-    }
-
-}
+    Layout,
+    Header,
+    Resume,
+    Movements,
+},
+};
 </script>
